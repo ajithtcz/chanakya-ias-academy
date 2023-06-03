@@ -1,0 +1,26 @@
+.scrolldown {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+    transition: all .5s ease;
+    background-color:white;
+   /* padding: 10px;*/
+}
+.logo{
+    top:-16.5px;
+    bottom: 0;
+}
+.navbartext{
+    color: var(--color-heading);
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbartext:hover{
+  color:#E25111;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu:hover{
+  display: block;
+}
+.dropdown-item:hover{
+    background: #E25111;
+    color: white;
+}

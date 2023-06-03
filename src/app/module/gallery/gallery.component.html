@@ -1,0 +1,281 @@
+<section class="top-bg-image  position-relative">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="position-relative z-1">
+        <nav class=" breadcrumb mx-lg-5 flex-wrap px-lg-5">
+          <h3 class=" contact-title">NEWSROOM</h3>
+          <ol class="breadcrumb  mt-2 ">
+            <li class="breadcrumb-item fs-5"><a href="#">HOME </a></li>
+            <li class="breadcrumb-item active fs-5" aria-current="page"><a [routerLink]="['/contact']">NEWSROOM</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!--2Section-->
+<section class="py-5 gallery-bgcolor">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center fw-bold">Gallery</h2>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active  fs-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Show all</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fs-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">WhatsApp Image</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fs-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">News image</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Image.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Image 2.JPG" class="img-fluid gallery-img " alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Image 3.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Image 4.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Image 1.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Business Owner 4.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Front View.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Application.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Application 1.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Application 2.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-3 mt-2 hover-btn">
+                <img src="assets/image/gallery/Application 3.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-md-3 mb-2 hover-btn" *ngFor="let item of [].constructor(74);let i=index">
+                <img src='{{"assets/image/IAS academy/Feedback "+(i+1)+".JPG"}}' class="img-fluid gallery-img " alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-md-4 hover-btn">
+                <img src="assets/image/gallery/Our News Article 1.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-4 hover-btn">
+                <img src="assets/image/gallery/Our News Article 2.JPG" class="img-fluid gallery-img" alt="">
+              </div>
+              <div class="col-md-4 hover-btn">
+                <img src="assets/image/gallery/Our News Article.JPG" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Call to action-->
+<section class="py-5 action-bg-color position-relative ">
+  <div>
+    <img src="assets/image/yellow-bg.png" class="callyellow-bg d-none d-lg-block" alt="">
+  </div>
+  <div class="container">
+    <div>
+      <img src="assets/image/homescroll/girl1.png" class="img-fluid position-absolute call-logo d-none d-lg-block z--1 "
+        alt="">
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div>
+          <p class="text-white  welcome-text position-relative fs-4">Join Chanakya's IAS Academy today and take the
+            first step towards achieving your dreams
+            Contact us now for more information or to enroll in our coaching programs.</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <button type="button" class="btn border-0"><a [routerLink]="['/contact']" class="btn-white">Join Now <i
+              class="fa-solid fa-arrow-right rightarrow"></i></a> </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--TESTIMONIAL-->
+<section class="py-5 testimonal-bg-color position-relative">
+  <div class="container">
+    <img src="assets/image/shape-04.png" class="position-absolute shape-09 d-none d-lg-block" alt="">
+    <div class="row d-flex align-items-center text-center">
+      <h2 class="text-heading-muted text-center pb-4">Testimonials</h2>
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center">
+          <div class="card border-0 px-5 testament-card position-relative">
+            <div class="text-center py-3">
+              <img src="assets/image/quote.png" class="img-fluid " width="50" alt="">
+            </div>
+            <div id="carouselExample" class="carousel slide testimonal" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active "
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">Pradeep</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class="my-5 pb-5 welcome-text lh-base fs-5 cssanimation">I am extremely satisfied with the coaching
+                    provided by Chanakya's IAS Academy,
+                    and their regular updates keep me informed.</p>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">Divya</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star-half-stroke"></i></li>
+                    </ul>
+                  </div>
+                  <p class=" my-5 pb-5 welcome-text lh-base fs-5 cssanimation">Joining Chanakya's IAS Academy was the
+                    best decision I made as a working professional.
+                    Thank you for guiding me. </p>
+                </div>
+                <div class="carousel-item  " data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">
+                    Subash</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class=" my-5 pb-5 welcome-text lh-base fs-5 cssanimation">The weekend batches and flexible timings
+                    at Chanakya's IAS Academy allowed me to balance
+                    work and preparation effectively. Thank you for making this possible.</p>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">
+                    Monika</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class=" my-5 pb-5 welcome-text lh-base fs-5 cssanimation">Their study materials and regular
+                    revision classes at Chanakya's
+                    IAS Academy were invaluable for my preparation towards TNPSC .</p>
+                </div>
+                <div class="carousel-item  " data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">
+                    Praba</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class=" my-5 pb-5 welcome-text lh-base fs-5 cssanimation">Hi, I achieved my dream by joining in
+                    this academy. I thank you for training me and making me achieve this.
+                    I am very satisfied with their training and guidane </p>
+                </div>
+                <div class="carousel-item  " data-bs-interval="2000">
+                  <h3 class="fw-bold text-center cssanimation">
+                    Venkatesh</h3>
+                  <div>
+                    <ul class="d-flex justify-content-center ms-0 ps-0 mb-0">
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star"></i></li>
+                      <li class="text-warning"><i class="fa-solid fa-star-half-stroke"></i></li>
+                    </ul>
+                  </div>
+                  <p class=" my-5 pb-5 welcome-text lh-base fs-5 cssanimation">The support and guidance from the staff
+                    at Chanakya's IAS Academy helped me successfully crack the exams despite my busy schedule.
+                    I am extremely satisfied with the coaching provided by them.</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev position-absolute prev-icon hide-lg" type="button "
+                data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next position-absolute next-icon hide-lg" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!--Map-->
+<section>
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-md-12">
+        <iframe
+          src="https://maps.google.com/maps?q=Chanakya's+IAS+Academy+-+TNPSC%2FNEET%2FUPSC%2FRRB%2FBANKING+coaching+centre+in+Villupuram&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed&amp;z=17"
+          class="map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

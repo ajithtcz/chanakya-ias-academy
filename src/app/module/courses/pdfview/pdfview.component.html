@@ -1,0 +1,23 @@
+<section class="mycourse-hero">
+  <div class="container-fluid">
+    <div class="row">
+    <div *ngIf="pdfData" class="col-md-12">
+
+    <ngx-extended-pdf-viewer
+      [src]="pdfData()"
+      [useBrowserLocale]="true"
+      [textLayer]="true"
+      [showHandToolButton]="false"
+      [showPresentationModeButton]="false"
+      [showDownloadButton]="false"
+    [showPrintButton]="false"
+    [showOpenFileButton]="false"
+    [showPropertiesButton]="false"
+    [contextMenuAllowed]="false"
+    [ignoreKeyboard]="true"
+    [enablePrint]="false"></ngx-extended-pdf-viewer>
+  </div>
+  </div>
+</div>
+</section>
+

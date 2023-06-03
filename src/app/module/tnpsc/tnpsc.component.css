@@ -1,0 +1,38 @@
+.top-bg-image{
+  background-image: url('../../../assets/image/contactimg.jpg');
+}
+@media(max-width:991px) {
+.top-bg-image{
+ background-image: url('../../../assets/image/about/about5.jpg');
+}
+}
+a{
+  color: #ffffff;
+}
+/*----*/
+.icon-color{
+    color: #fe0040;
+    padding-right: 10px;
+}
+.tnpsc-logo{
+    background: #e8eaff;
+    border: 0;
+}
+.tnpsc-logo:hover{
+    background: #2b4eff;
+    border-color: #2b4eff;
+    box-shadow: 0px 20px 30px 0px rgba(4, 23, 118, 0.3);
+    color: white;
+}
+
+    .hr-line{
+      border: 0;
+      height: 3px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(7, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    .tnpsc-card{
+      width: 75%;
+      text-align: justify;
+      text-align-last: left;
+    }
+  

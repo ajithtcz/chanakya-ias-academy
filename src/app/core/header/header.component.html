@@ -1,0 +1,49 @@
+<header class="sticky-top top "> 
+    <nav class="navbar navbar-expand-lg navbar-light py-4 position-relative ">
+      <div class="container ">
+        <a class="navbar-brand" href="#" [routerLink]="['/home']">
+          <img class="img-fluid position-absolute logo " src="assets/image/Chanakya logo.png " width="180" height="180" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 text-end py-1">
+            <li class="nav-item me-4"><a class="nav-link navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" [routerLink]="['/home']">HOME</a></li>
+            <li class="nav-item me-4"><a class="nav-link navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/about']">ABOUT US</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle navbartext"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COURSES OFFERED
+              </a>
+              <ul class="dropdown-menu border-0 text-end">
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/tnpsc']">TNPSC</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/upsc']">UPSC</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/rrb']">RRB</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#"[routerLink]="['/tet']">TET</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#"[routerLink]="['/bank']">BANKING</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#"[routerLink]="['/neet']">NEET</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#"[routerLink]="['/police']">POLICE</a></li>
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#"[routerLink]="['/pgtrb']">PGTRB</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-4"><a class="nav-link navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/gallery']">NEWSROOM</a></li>
+            <li class="nav-item me-4"><a class="nav-link navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/contact']">CONTACT</a></li>
+            <li class="nav-item me-4"><a class="nav-link navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" [routerLink]="['/freematerials']">FREE MATERIALS</a></li>
+            <li class="nav-item dropdown" *ngIf="session.getUserDetails()!=null">
+              <a class="nav-link dropdown-toggle navbartext"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Account
+              </a>
+              <ul class="dropdown-menu border-0 text-end">
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" [routerLink]="['/mycourses']">My Courses</a></li>
+      
+                <li><a class="dropdown-item navbartext" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" (click)="logout()">Logout</a></li>
+              </ul>
+            </li>
+
+            <div> <a class="btn btn-outline-danger me-2 mb-2 mb-sm-0  p-2 px-3 h2" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" *ngIf="session.getUserDetails()==null" [routerLink]="['/login']"> LOGIN </a></div>
+          </ul>
+         
+        </div>
+      </div>
+    </nav> 
+</header>

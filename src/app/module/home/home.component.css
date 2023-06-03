@@ -1,0 +1,389 @@
+
+
+/*section1*/
+/*@keyframes zoom {
+  0% {
+    transform: scale(1 , 1);
+  }
+  100%{
+    transform: scale(1.1, 1.1);
+  }
+}
+.swiper .item > img {
+  animation: zoom 10s ease-in infinite;
+}*/
+
+.swiper-button-prev{
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.swiper-button-next{
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5) ;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+
+/*
+.carousel-indicators [data-bs-target] {
+  width: 50px;
+  height: 50px;
+  /*background-color: #fff;
+  background-clip: padding-box;
+  border: 0;*
+  border-radius: 50%;
+  background-image: url('../../../assets/image/about/About us 1.png');
+  background-size: cover;
+
+}
+*/
+
+@media(max-width:991px) {
+  .hide-lg{
+    display: none;
+  }
+  .pading-left{
+    padding-left: 0px;
+}
+.testament-card{
+  width: 100% !important;
+}
+.welcome-card{
+  width: 100% !important;
+}
+}
+
+/*Welcome Message*/
+.quote-img{
+  left: 20%;
+  bottom: 40%;
+}
+.welcome-text{
+  font-weight: 500;
+  text-align: justify;
+}
+.welcome-card{
+  width: 75%;
+}
+
+  /*section3*/
+  /*.btn-borders{
+    display: flex;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #2b4eff;
+    border-radius: 4px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  /*section success*
+ .suscess-bg-color{
+    background: var(--primary-my-m-color);
+ }*/
+/*Our Courses*/
+.achievebtn::before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: -1;
+  transform: skewX(35deg);
+   border-radius: 5px; 
+  transition: all .5s ease-in;
+}
+.achievebtn:hover::before {
+  background: #00082E;
+  transition: all .5s ease-in;
+}
+.achievebtn:hover {
+  color: white;
+}
+
+.achievebtn{
+  position: relative;
+  color: #00082E ;
+  z-index: 1;
+  font-weight: bold;
+  width: 100% ;
+  padding: 10px 30px;
+  transition: all .5s ease-in;
+  text-align: center;
+}
+.single-item-wrapper{
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(to right top, #3b2af6, #154bfd, #0063ff, #0077ff, #2589ff, #009cff, #00adff, #00bcff, #00cdf7, #00dbde);
+   transition: all 0.5s ease-out; 
+  border: 1px solid #fff;
+}
+.single-item-wrapper:hover {
+  transition: all 0.2s ease-in;
+    top: -4px;
+}
+.cssanimation{
+  animation: fadeInBottom linear 1s ;
+}
+
+.cssanimation1{
+  animation: fadeInBottom1 linear 1.5s ;
+}
+.cssanimation2{
+  animation: fadeInBottom2 linear 2s ;
+}
+.cssanimation3{
+  animation: fadeInBottom3 linear 2.5s ;
+}
+.cssanimation4{
+  animation: fadeInBottom4 linear 1s ;
+}
+.cssanimation5{
+  animation: fadeInBottom5 linear 1.5s ;
+}
+.cssanimation6{
+  animation: fadeInBottom6 linear 2s ;
+}
+.cssanimation7{
+  animation: fadeInBottom7 linear 2.5s ;
+}
+@keyframes fadeInBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom1 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom2 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom3 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom4 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom5 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom6 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+@keyframes fadeInBottom7 {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+
+/*Achieve your Goals*/
+/*.coursesbg-color{
+  background:rgb(0,8,78);
+}
+.text-color{
+  color: rgb(222,89,94);
+}
+.goal-card{
+  border-radius: 25px;
+}*/
+/*Announcememt*/
+/*.marquee{
+  animation: marquee linear 10s infinite;
+}
+@keyframes marquee {
+  0% {transform: translate3d(30,0,0);}
+  100% {transform: translate3d(-30%,0,0);}
+}*/
+/*-------------------------------*/
+.marquee {
+  width: 1000px; 
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.marqueediv {
+display: table-row;
+white-space: nowrap;
+padding-left: 100%; 
+animation: marquee 8s linear infinite; 
+}
+.marquee  h3 {
+width: 1000px; 
+padding-left: 1000px; 
+display: table-cell; 
+}
+.marquee:hover .marqueediv {
+  animation-play-state: paused;
+}
+@media(max-width:992px) {
+  .marquee {
+    width: 310px; 
+    overflow: hidden;
+  }
+  .marquee  h3 {
+    width: 310px; 
+    padding-left: 310px; 
+    display: table-cell; 
+    }
+}
+
+/* Make it move */
+@keyframes marquee {
+  0%   { transform: translate(0%,0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+/*---------------------------------*/
+.hr{
+  position: absolute;
+  width: 60%;
+  right: 100px;
+  top: 18px;
+}
+.btn-image{
+  right: 16%;
+  z-index: 1;
+  top: 34%;
+}
+.announcementbg-color{
+  background: rgb(12, 19, 79);
+}
+.admission-color{
+  color:#E25111;
+  font-weight: bold;
+  text-align: center;
+}
+.hero-circle{
+  left: 5%;
+     animation: hero-circle-1 6s linear 0s infinite alternate;
+}
+@keyframes hero-circle-1 {
+    from {fix: 0px;}
+    to {transform: rotate(360deg);}
+  }
+  /*Mission Message*/
+  .mission-bg-color{
+    background: #5C469C;
+  }
+  .yellow-bg{
+   position: absolute;
+    animation: section-animation-2 3s infinite;
+    left: 40%;
+    top: 40%;
+  }
+  @keyframes section-animation-2 {
+    0% {
+      width: 0;
+  }
+  15% {
+      width: 10%;
+  }
+  85% {
+      opacity: 1;
+  }
+  90% {
+      width: 10%;
+      opacity: 0;
+  }
+  100% {
+      width: 0;
+      opacity: 0;
+  }
+  }
+  
+/*Youtube*/
+.youtubesize{
+  height:700px;
+}
+
+/* Our Strength*/
+.strength-bg-color{
+  background-color: #e2e8f0;
+}
+.strength-card{
+  border: 0;
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
+}
+.strength-card::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #3d48a5;
+  height: 65px;
+  width: 65px;
+  border-radius: 40px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+.strength-card:hover::before {
+  transform: scale(21);
+}
+.strength-card:hover{
+  color: white;
+}
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #3d48a5;
+  border-radius: 0 4px 0 50px;
+}
+
+.go-arrow {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  color: white;
+}
+
+

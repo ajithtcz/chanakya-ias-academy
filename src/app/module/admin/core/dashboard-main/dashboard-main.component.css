@@ -1,0 +1,10 @@
+.dashboard-main{
+    background-color: #f7f7fa!important;
+    color: #333!important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    height: 100%;
+    line-height: 1.5!important;
+    overflow-x: hidden!important;
+    overflow-y: auto!important;
+}

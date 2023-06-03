@@ -1,0 +1,311 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "@fontsource/roboto"; */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --primary-my-color: #fff8e8;
+    --primary-my-my-color: #f3f4f8;
+    --primary-my-m-color: #edeef3;
+    --color-primary: #525FE1;
+    --footer-primary-color: #231F40;
+    --tnpsc-primary-color: #eff4fa;
+    --primary-ems-color:#3D5EE1;
+    --secondary-ems-color:#18aefa;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(34, 29, 29);
+}
+html,
+body,
+.container-fluid {
+    overflow-x: clip !important;
+}
+.text-para-muted {
+    color: #53545b;
+    line-height: 1.7;
+    margin-top: 15px;
+    text-align: justify;
+}
+.text-heading-muted {
+    color: #0e1133;
+    font-weight: 700;
+}
+/*Top background image*/
+.top-bg-image {
+    align-items: center;
+    display: flex;
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    color: #ffffff !important;
+}
+.breadcrumb {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+@media(max-width:992px) {
+    .top-bg-image {
+        align-items: center !important;
+        display: flex !important;
+        min-height: 550px;
+        overflow: hidden;
+    }
+    .breadcrumb {
+        display: flex !important;
+        justify-content: center !important;
+        
+    }
+    .testament-card {
+        width: 100% !important;
+    }
+    html,
+    body,
+    .container-fluid {
+        overflow-x: clip !important;
+    }
+    .tnpsc-card {
+        width: 100% !important;
+        text-align: justify;
+        text-align-last: left;
+    }
+    .hide-lg{
+        display: none !important;
+      }
+}
+.contact-title {
+    font-size: 46px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.top-bg-image::before {
+    content: "";
+    position: absolute;
+    background: #000000;
+    opacity: 0.10;
+    width: 100%;
+    height: 100%;
+}
+/*map*/
+.map{
+    width: 100%;
+    height: 450px;
+  }
+  /*Call to action*/
+.action-bg-color{
+    background: #3d48a5;
+  }
+  .btn-white{
+    border-radius: 5px;
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      color: var(--color-primary) !important;
+      background: white;
+      padding: 0 30px;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.4s;
+      border: 0 none;
+  }
+  .btn-white:hover .rightarrow{
+    transform: translateX(5px) ;
+  }
+  .call-logo{
+    left: -5% !important;
+    bottom: -13% !important;
+     width: 620px !important;
+  }
+  .callyellow-bg{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    animation: section-animation-2 3s infinite;
+  }
+  @keyframes section-animation-2 {
+    0% {
+      width: 0;
+  }
+  15% {
+      width: 10%;
+  }
+  85% {
+      opacity: 1;
+  }
+  90% {
+      width: 10%;
+      opacity: 0;
+  }
+  100% {
+      width: 0;
+      opacity: 0;
+  }
+  }
+  /*Testimonials*/
+  .testimonal-bg-color{
+    background:#F1EDFF;
+  }
+  .shape-09{
+    right: 20%;
+    top: 20%;
+  }
+  .testament-card{
+    width: 75%;
+    background: #F1EDFF !important;
+  }
+  .prev-icon{
+    width: 50px !important;
+    height: 50px !important;
+    left: -9% !important;
+    top: 10% !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    border-radius: 50%;
+  }
+  .next-icon{
+    width: 50px !important;
+    height: 50px !important;
+    right:-8% !important;
+    top: 10% !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    border-radius: 50%;
+  }
+  .testimonal .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+   background-color: #2b4eff !important;
+    border-radius: 50%;
+  }
+  .cssanimation{
+    animation: fadeInBottom linear 1s ;
+  }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+  }
+  
+  /* Courses offered button*/
+  .coursesbtn-color{ 
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: #2b4eff;
+    border-radius: 10px;
+  }
+
+  /*admin dashbaord*/
+  .text-ems-primary{
+    color:var(--primary-ems-color);
+}
+.border-ems-primary{
+    border-color: var(--primary-ems-color)!important;
+}
+.bg-ems-primary{
+    background-color:var(--primary-ems-color)!important;
+}
+
+.bg-ems-secondary{
+    background-color:var(--secondary-ems-color)!important;
+}
+.text-ems-secondary{
+  color:var(--secondary-ems-color);
+}
+
+.card.bg-comman {
+    background-color: #fff;
+    border: 0!important;
+    border-radius: 15px;
+    box-shadow: 0px 0px 31px rgba(44, 50, 63, 0.02);
+}
+
+.card.card-chart, .card.comman-shadow {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 31px rgba(44, 50, 63, 0.02);
+    border-radius: 15px;
+    border: 0;
+}
+@media (min-width: 992px) {
+   .my-container .container-fluid {
+      padding-left: 210px;
+      padding-right: 0px;
+      margin-left: inherit;
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+}
+.slow-animation{
+    -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+}
+    
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d1d1d1; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1; 
+    border-radius: 10px;
+}
+
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: var(--primary-ems-color)!important;
+    border-color: var(--primary-ems-color)!important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: var(--primary-ems-color)!important;
+    background: var(--primary-ems-color)!important;
+}
+.p-datatable .p-datatable-tbody > tr > td,.p-datatable .p-paginator-bottom
+{
+    border-width: 0px!important;
+}
+.p-datatable .p-datatable-thead>tr>th{
+  font-weight: 700 !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+  padding: 0.75rem 0.50rem!important;
+  white-space: nowrap!important;
+  border-top: 1px solid #e2e5e8!important;
+}
+.p-datatable .p-datatable-tbody>tr>td {
+    padding: 0.75rem 0.50rem!important;
+    white-space: nowrap!important;
+}
+
+.login-danger{
+    color: red;
+}

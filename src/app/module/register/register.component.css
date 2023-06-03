@@ -1,0 +1,42 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .shadow {
+    border: none;
+  }
+  .home{  
+    margin-top: 90px;
+      background: rgb(255,248,232);
+      background: linear-gradient(90deg, rgba(255,248,232,1) 0%, rgba(140,153,254,1) 400%);
+  }
+  .contact-form{
+    line-height: 54px;
+    padding: 0 23px;
+    background: #f3f4f8;
+    border-radius: 4px;
+    border: 2px solid #f3f4f8;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.form-label{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e1133;
+    margin-bottom: 11px;
+}
+.e-btn{
+    height: 50px;
+    text-align: center;
+    padding: 0 25px;
+    color: #ffffff;
+    background: #2b4eff;
+    border-radius: 4px;
+ 
+}
+.manimg{
+    top: 30%;
+    right: 30%;
+}

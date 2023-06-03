@@ -1,0 +1,11 @@
+.top-bg-image{
+    background-image: url('../../../../assets/image/contactimg.jpg');
+  }
+  @media(max-width:992px) {
+  .top-bg-image{
+   background-image: url('../../../../assets/image/about/about5.jpg');
+  }
+  }
+  a{
+    color: #ffffff;
+  }

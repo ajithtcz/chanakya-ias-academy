@@ -1,0 +1,43 @@
+<section class="mycourse-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="py-5 d-flex flex-wrap align-items-center gap-4">
+                    <div>
+                        <i class="fa-solid fa-circle-user text-white display-1"></i>
+                    </div>
+                   <div>
+                    <h3 class="contact-title">{{studentinfo().Name}}</h3>
+                    <p class="text-white">{{studentinfo().Email}}</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!--2Section-->
+  <section class="py-5 colours-bgcolor">
+      <div class="container">
+          <div class="row text-center" *ngIf="studentinfo().Enrolled_Courses">
+              <div class="col-md-12">
+                  <h2 class="text-center fw-bold"> Your Courses</h2>
+              </div>
+              <div class="col-md-4" *ngFor="let item of studentinfo().Enrolled_Courses.split(',')">
+                <div class="card mb-3 p-3 border-0">
+                    <div class="row g-0">
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img src="assets/image/courses/tnpsclogo.png" class="img-fluid rounded-start"alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h4 class="card-title fw-bold text-uppercase">{{item}}</h4>
+                          <a [routerLink]="['/coursesview',item]" class="btn btn-primary"><i class="fa-solid fa-book-open-reader"></i> Read </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+ 

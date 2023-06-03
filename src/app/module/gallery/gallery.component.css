@@ -1,0 +1,30 @@
+/* section bg*/
+.top-bg-image{
+  background-image: url('../../../assets/image/contactimg.jpg');
+}
+@media(max-width:991px) {
+.top-bg-image{
+ background-image: url('../../../assets/image/about/about5.jpg');
+}
+}
+@media (min-width:992px) {
+  .gallery-img{
+    height: 60vh;
+    width: 100%;
+    object-fit: contain;
+  } 
+}
+a{
+  color: #ffffff;
+}
+.nav-pills .nav-link.active{
+  background: #E25111;
+    color: white;
+}
+.nav-link{
+  color: black;
+}
+.hover-btn:hover{
+  transform: scale(1.02); 
+}
+

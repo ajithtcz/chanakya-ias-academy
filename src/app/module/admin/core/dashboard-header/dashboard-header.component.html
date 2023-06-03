@@ -1,0 +1,42 @@
+<header class="sticky-top bg-white header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand me-lg-5" href="#"><i class="fa-solid fa-graduation-cap fa-xl text-ems-primary"></i> <span class="fw-flod">CIA</span></a>
+            <button (click)="resizebody()" class="btn btn-primary bg-ems-primary border-ems-primary ms-lg-5 me-lg-5" type="button">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+        
+        
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <form class="d-flex ms-lg-5" role="search">
+              <span class="input-group-text border-end-0 rounded-end-0 bg-white" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input class="form-control border-start-0  rounded-start-0" type="search" placeholder="Search" aria-label="Search">
+                
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link header-nav-list" ><i class="fa-solid fa-expand"></i></a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-list" ><i class="fa-regular fa-bell"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-user fa-lg"></i> Profile
+                  </a>
+                  <ul class="dropdown-menu  dropdown-menu-end">
+          
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" (click)="logout()" role="button"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                  </ul>
+                </li>
+               
+              </ul>
+           
+          </div>
+   
+          
+        </div>
+      </nav>
+     
+</header>

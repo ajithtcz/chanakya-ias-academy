@@ -1,0 +1,97 @@
+/* section bg*/
+.top-bg-image{
+    background-image: url('../../../assets/image/contactimg.jpg');
+}
+@media(max-width:992px) {
+  .top-bg-image{
+   background-image: url('../../../assets/image/about/about5.jpg');
+}
+}
+a{
+    color: #ffffff;
+}
+/*Contact US */
+/*Follow us*/
+.box-size{
+    display: inline-block; 
+    font-size: 15px; 
+    width: 44px; 
+    height: 44px;
+    line-height: 46px;
+    text-align: center;
+     border: 2px solid #285da1; 
+     background: #285da1; 
+    border-radius: 4px;
+    color: #ffffff;
+}
+.bg-colour{
+    background: #03a9f4;
+    border: 0;
+}
+.bg-colours{
+    background: #d2173f;
+    border: 0;
+}
+.btn-success-color{
+    background: #00b453;
+    border: 0px;
+}
+.shadow-color{
+    padding: 40px 40px;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(1, 11, 60, 0.1); 
+  }
+/*Enquiry form input*/
+.contact-form{
+    line-height: 54px;
+    padding: 0 23px;
+    background: #f3f4f8;
+    border: 2px solid #f3f4f8;
+}
+.contact-form-textarea{
+    background: #f3f4f8;
+    border: 2px solid #f3f4f8;
+    font-size: 15px;
+}
+.contact-shape-2{
+    right: 14%;
+    top: 25%;
+}
+.contact-shape-1{
+    right: 35%;
+    bottom: 25%;
+}
+  .btn-color{ 
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: #2b4eff;
+  }
+  .contact__info-text{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .faderight{
+    animation: fadeInRight 1s ease-in-out;
+  }
+  .fadeleft{
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }

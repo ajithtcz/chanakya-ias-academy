@@ -1,0 +1,103 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Welcome Admin!</h5>
+            </div>
+        </div>
+        <div class="row" *ngIf="Pivotorders">
+            <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                <div class="card bg-comman card1 w-100 mb-3">
+                  <div class="card-body">
+                    <div class="db-widgets d-flex justify-content-between align-items-center">
+                      <div class="db-info">
+                        <h6>Total Customers</h6>
+                        <h3>{{Pivotorders['Total Customers']?Pivotorders['Total Customers']:0}}</h3>
+                      </div>
+                      <div class="db-icon">
+                        <i class="fa-solid fa-user-graduate text-primary fa-lg"></i>
+                 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                <div class="card bg-comman card2 w-100 mb-3">
+                  <div class="card-body">
+                    <div class="db-widgets d-flex justify-content-between align-items-center">
+                      <div class="db-info">
+                        <h6>Total Orders</h6>
+                        <h3>{{Pivotorders['Total Orders']?Pivotorders['Total Orders']:0}}</h3>
+                      </div>
+                      <div class="db-icon">
+                        <i class="fa-solid fa-user-tie fa-lg"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                <div class="card bg-comman card3 w-100 mb-3">
+                  <div class="card-body">
+                    <div class="db-widgets d-flex justify-content-between align-items-center">
+                      <div class="db-info">
+                        <h6>Order Processing
+                        </h6>
+                        <h3>{{Pivotorders['Total Orders']?Pivotorders['Total Orders']-(Pivotorders['Order Placed']+Pivotorders['Total Delivered']):0}}</h3>
+                      </div>
+                      <div class="db-icon">
+                        <i class="fa-solid fa-building fa-lg"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 d-flex">
+              <div class="card bg-comman card4 w-100 mb-3">
+                <div class="card-body">
+                  <div class="db-widgets d-flex justify-content-between align-items-center">
+                    <div class="db-info">
+                      <h6>Total Delivered</h6>
+                      <h3>{{Pivotorders['Total Delivered']?Pivotorders['Total Delivered']:0}}</h3>
+                    </div>
+                    <div class="db-icon">
+                      <i class="fa-solid fa-user-group fa-lg"></i>
+                 
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            
+        </div>
+        <!--Chart-->
+        <div class="row d-none">
+          <div class="col-md-6  d-flex">
+              <div class="card mb-3 bg-comman flex-fill p-1">
+                <div class="card-header d-flex align-items-center justify-content-between border-bottom-0 bg-white ">
+                  <h5 class="card-title">Overview</h5>
+                  <a><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <div id="chart"></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 d-flex">
+              <div class="card mb-3 bg-comman flex-fill p-1">
+                <div class="card-header d-flex align-items-center justify-content-between border-bottom-0 bg-white">
+                  <h5 class="card-title">Student Activity</h5>
+                  <a><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <div class="card-body">
+                  <div id="barchart"></div>
+                </div>
+              </div>
+          </div>
+      </div>
+  
+    </div>
+  </section>
