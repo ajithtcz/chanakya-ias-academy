@@ -41,7 +41,7 @@ class ControllersStream extends Controller
   }
   public function playvideo()
   {
-    if (isset($_SERVER["HTTP_REFERER"]) && $_SERVER['HTTP_SEC_FETCH_SITE'] == 'same-site' && $_SERVER['HTTP_REFERER'] == "http://localhost:4200/") {
+    if (isset($_SERVER["HTTP_REFERER"])&&$_SERVER['HTTP_REFERER'] == "http://localhost:4200/") {
       $course = $this->model('course');  //model query
       $getdata = $course->getcoursebyid($_GET['coursename'], $_GET['v']);
       $filePath = VIDEO . $getdata['Course_Video'];
@@ -62,7 +62,7 @@ class ControllersStream extends Controller
   {
     try {
 
-      if (isset($_SERVER["HTTP_REFERER"]) && $_SERVER['HTTP_SEC_FETCH_SITE'] == 'same-site' && $_SERVER['HTTP_REFERER'] == "http://localhost:4200/") {
+      if (isset($_SERVER["HTTP_REFERER"])&& $_SERVER['HTTP_REFERER'] == "http://localhost:4200/") {
          $course = $this->model('course');  //model query
          $getdata = $course->getcoursebyid($_GET['coursename'],$_GET['v']);
           $filePath = PDF.$getdata['Course_Pdf'];

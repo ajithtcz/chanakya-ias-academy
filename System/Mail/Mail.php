@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception; 
 class Mail
 {
-    public static function sendmail()
+    public static function sendmail($data,$course)
     {
       //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -23,14 +23,14 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('stechcode@gmail.com', 'Mailer');
-    $mail->addAddress('saranraj@muhabalab.com', 'Joe User');     //Add a recipient
-    
+    $mail->setFrom($data['Email'], "Chanakya's IAS Academy");
+    $mail->addAddress('stechcode@gmail.com', "Chanakya's IAS Academy");     //Add a recipient
+    $mail->addReplyTo($data['Email'], 'Your registration has been successfully received. Please wait for our confirmation, as we will be calling you soon.');
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Subject = "Chanakya's IAS Academy";
+    $mail->Body    = "<b>Name:</b>".$data['Name']."<br><b>Email:</b>".$data['Email']."<br><b>Mobilenumber:</b>".$data['Mobilenumber']."<br><b>Enroll Course:</b>".$course."<br><b>Message:</b>".$data['Message'];
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

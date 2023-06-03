@@ -37,6 +37,7 @@
                 "message" => "Successful login.",
                 "jwt" => $jwt,
                 "Email" => $Email,
+                "Role" => $Role,
                 "expireAt" => $expire_claim
             );
         }
