@@ -1,6 +1,5 @@
 CREATE TABLE cia_coursedetails(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    //Course_Name VARCHAR(200),
     Course_Short_Name VARCHAR(200),
     Course_Title VARCHAR(500),
     Course_Pdf VARCHAR(500),
